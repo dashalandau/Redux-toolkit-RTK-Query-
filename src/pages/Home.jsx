@@ -5,7 +5,7 @@ import { useGetTodosQuery, useDeleteTodoMutation, useUpdateTodoMutation } from '
 const Home = () => {
     const navigate = useNavigate();
     const { data, isLoading, error } = useGetTodosQuery();
-    const [updateTodo] = useUpdateTodoMutation();
+    //const [updateTodo] = useUpdateTodoMutation();
     const [deleteTodo] = useDeleteTodoMutation();
 
     if (isLoading) {
